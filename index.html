@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="./script.js"></script>
+    <title>Exercice 1</title>
+</head>
+<body>
+    <style> /** CSS */
+        body {
+            width: 100vw;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            font-size: 20px;
+            position: absolute;
+        }
+
+        #container {
+            grid-column: 1 / 2;
+            grid-row: 1 / 2;
+            position: relative;
+            margin: auto;
+            text-align: center;
+        }
+
+        #text {
+            border: 2px solid black;
+            margin: auto;
+            top: 15px;
+            padding: 10px;
+            position: relative;
+            margin: auto;
+            display: none;
+        }
+    </style>
+
+    <section id="container">
+        <button id="btn">Show Text</button>
+        <div id="text"></div>
+    </section>
+</body>
+</html>
